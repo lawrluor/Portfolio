@@ -120,3 +120,14 @@ a:hover {
   font-size: 5em;
   padding: 8px;
 }
+
+.products-grid {
+  display: flex;
+}
+
+.card-title {
+  color: '#fff';
+  height: '176px';
+  background-image: url("/public/static/img/poise_icon.png");
+  background: 'center / cover';
+}

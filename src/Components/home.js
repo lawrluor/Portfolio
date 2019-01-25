@@ -26,7 +26,7 @@ class Home extends Component {
               </a>
 
               <a href="https://www.instagram.com/oodles.of.lawrences" rel="noopener noreferrer" target="_blank">
-                <i className="fa fa-instagram-square" aria-hidden="true" />
+                <i className="fa fa-instagram" aria-hidden="true" />
               </a>
             </div>
           </Cell>

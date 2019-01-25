@@ -9,7 +9,9 @@ class App extends Component {
     return(
       <div className="mainContainer is-fluid">
         <div>
+          <Link to="/">Home</Link>
           <Link to="/music">Looking for Music?</Link>
+          <Link to="/products">Looking for Products?</Link>
         </div>
         <Main/>
         <div id="Footer" className="container footerContainer is-fluid has-text-centered">
