@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Tabs, Tab, Grid, Cell, Card, CardText, CardTitle, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
+import { Cell, Card, CardText, CardTitle, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
 
 class ProductCard extends Component {
   constructor(props) {
@@ -7,24 +7,23 @@ class ProductCard extends Component {
   }
 
   render() {
+    // const img = {this.props.img};
     return(
-      <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-        <CardTitle className="card-title">Project Title</CardTitle>
+      <Cell col={4}>
+        <Card shadow={0} style={{minWidth: '450', margin: 'auto'}}>
+          <CardTitle className="card-title">{this.props.title}</CardTitle>
 
-        <CardText>
-          Loren Ipsum Text
-        </CardText>
+          <CardText>
+            {this.props.desc}
+          </CardText>
 
-        <CardActions border>
-          <Button colored>Github</Button>
-          <Button colored>Github</Button>
-          <Button colored>Github</Button>
-        </CardActions>
-
-        <CardMenu style={{color: '#fff'}}>
-          <IconButton name="share" />
-        </CardMenu>
-      </Card>
+          <CardActions>
+            <Button colored>Github</Button>
+            <Button colored>Demo</Button>
+            <Button colored>Other</Button>
+          </CardActions>
+        </Card>
+      </Cell>
     )
   }
 }

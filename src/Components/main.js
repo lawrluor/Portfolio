@@ -5,6 +5,7 @@ import Home from './home';
 import Music from './music';
 import Products from './products';
 
+// Router Embed
 const Main = () => (
   <Switch>
     <Route exact path="/" component={Home} />

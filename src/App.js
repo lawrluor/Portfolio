@@ -1,22 +1,19 @@
 import React, { Component } from 'react';
 import Main from './Components/main';
-import { Link } from 'react-router-dom';
 
 import './App.css';
+import Footer from './Components/footer';
+import Header from './Components/header';
 
 class App extends Component {
   render() {
     return(
-      <div className="mainContainer is-fluid">
-        <div>
-          <Link to="/">Home</Link>
-          <Link to="/music">Looking for Music?</Link>
-          <Link to="/products">Looking for Products?</Link>
-        </div>
+      <div>
+        <Header/>
+
         <Main/>
-        <div id="Footer" className="container footerContainer is-fluid has-text-centered">
-          <h5>Built with React, Jan 2019</h5>
-        </div>
+
+        <Footer/>
       </div>
     )
   }
