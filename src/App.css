@@ -72,7 +72,7 @@ a:hover {
   background-color: var(--background);
   justify-content: 'center';
   align-items: 'center';
-  padding: 1rem 1rem;
+  width: 100%;
 }
 
 .bodyContainer {
@@ -158,12 +158,22 @@ a:hover {
   padding: 0px;
 }
 
-.products-grid {
-  display: flex;
-}
-
+/* product row & card */
 .card-title {
   color: '#fff';
   height: '176px';
   background: 'center / cover';
+}
+
+.card-text {
+  color: '#fff';
+}
+
+.products-grid {
+  display: flex;
+}
+
+.product-row {
+  justify-content: 'left';
+  align-items: 'left';
 }

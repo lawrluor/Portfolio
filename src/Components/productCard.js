@@ -7,21 +7,28 @@ class ProductCard extends Component {
     super(props);
   }
 
+  // Trouble assigning class names within Card, perhaps because of Bootstrap/React-MDL CSS override?
   render() {
-    // const img = {this.props.img};
+    // Passed props
+    const desc = this.props.desc;
+    const tools = this.props.tools;
+    const img_src = this.props.img_src;
+    const url = this.props.url;
+    const github = this.props.github;
+
     return(
       <Col lg="4" md="6">
-        <Card shadow={0} style={{minWidth: '450', margin: 'auto'}}>
+        <Card shadow={0} style={{width: '17rem', height: '17rem', margin: "2rem", background: img_src }}>
           <CardTitle className="card-title">{this.props.title}</CardTitle>
 
           <CardText>
-            {this.props.desc}
+            <h3>{desc}</h3>
+            <h4>{tools}</h4>
           </CardText>
 
           <CardActions>
-            <Button colored>Github</Button>
-            <Button colored>Demo</Button>
-            <Button colored>Other</Button>
+            <a target="_blank" rel="noopener noreferrer" href={github}><Button style={{color: '#7D6F7D'}}>Github</Button></a>
+            <a target="_blank" rel="noopener noreferrer" href={url}><Button style={{color: '#7D6F7D'}}>Demo</Button></a>
           </CardActions>
         </Card>
       </Col>

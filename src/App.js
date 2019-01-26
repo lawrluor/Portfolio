@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Container, Row, Col } from 'reactstrap';
 import Main from './Components/main';
 
 import './App.css';
@@ -8,12 +9,14 @@ import Header from './Components/header';
 class App extends Component {
   render() {
     return(
-      <div>
-        <Header/>
+      <div className="mainContainer">
+        <Container>
+          <Header/>
 
-        <Main/>
+          <Main/>
 
-        <Footer/>
+          <Footer/>
+        </Container>
       </div>
     )
   }
