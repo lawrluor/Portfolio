@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Grid, Cell } from 'react-mdl';
+import { Container, Row, Col } from 'reactstrap';
 
 import ProductCard from './productCard';
 
@@ -10,28 +10,32 @@ class Home extends Component {
 
     return(
       <div className="mainContainer">
-        <Grid className="landing-grid">
-          <Cell col={4} className="header-image">
-            <img className="profileImage" alt="profile circle" src={"/static/img/law_cropped.png"}></img>
-          </Cell>
+        <Container>
+          <Row className="landing-grid">
+            <Col sm="4" className="header-image">
+              <img className="profileImage" alt="profile circle" src={"/static/img/law_cropped.png"}></img>
+            </Col>
 
-          <Cell col={4} className="header-words">
-            <span><h4><i>greetings from</i></h4></span><h2>LAWRENCE LUO</h2>
-            <h4>Let&#39;s create something.</h4>
-          </Cell>
-        </Grid>
+            <Col sm="4" className="header-words">
+              <span><h4><i>greetings from</i></h4><h2>LAWRENCE LUO</h2></span>
+              <h4>Let&#39;s create something.</h4>
+            </Col>
+          </Row>
 
-        <hr/>
+          <hr/>
 
-        <Grid>
-          <Cell col={12}>
-            <div className="products-grid">
-              <ProductCard title="Test" desc="first product"/>
-              <ProductCard title="Test2" desc="second product"/>
-              <ProductCard title="Test3" desc="third product"/>
-            </div>
-          </Cell>
-        </Grid>
+          <Row>
+            <ProductCard title="Test" desc="first product"/>
+            <ProductCard title="Test2" desc="second product"/>
+            <ProductCard title="Test3" desc="third product"/>
+            <ProductCard title="Test" desc="first product"/>
+            <ProductCard title="Test2" desc="second product"/>
+            <ProductCard title="Test3" desc="third product"/>
+            <ProductCard title="Test" desc="first product"/>
+            <ProductCard title="Test2" desc="second product"/>
+            <ProductCard title="Test3" desc="third product"/>
+          </Row>
+        </Container>
       </div>
     )
   }

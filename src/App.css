@@ -126,7 +126,7 @@ a:hover {
 
 /* Images */
 .profileImage {
-  height: calc(11rem + 10vh); /* 176px + 10% viewport height to pad scaling*/
+  height: calc(10rem + 10vh); /* 176px + 10% viewport height to pad scaling*/
   border-radius: 50%;
   border-width: 0.125rem; /* 2px */
   border-color: grey;

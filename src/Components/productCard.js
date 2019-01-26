@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Container, Row, Col } from 'reactstrap';
 import { Cell, Card, CardText, CardTitle, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
 
 class ProductCard extends Component {
@@ -9,7 +10,7 @@ class ProductCard extends Component {
   render() {
     // const img = {this.props.img};
     return(
-      <Cell col={4}>
+      <Col lg="4" md="6">
         <Card shadow={0} style={{minWidth: '450', margin: 'auto'}}>
           <CardTitle className="card-title">{this.props.title}</CardTitle>
 
@@ -23,7 +24,7 @@ class ProductCard extends Component {
             <Button colored>Other</Button>
           </CardActions>
         </Card>
-      </Cell>
+      </Col>
     )
   }
 }
