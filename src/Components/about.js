@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Grid, Cell } from 'react-mdl';
 
-class About extends Component {
+class About extends React.Component {
   render() {
     return(
       <div>

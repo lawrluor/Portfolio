@@ -1,24 +1,21 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 
 import ProductCard from './productCard';
 
-class Home extends Component {
+class Home extends React.Component {
   render() {
-    console.log("url", process.env.PUBLIC_URL + "/static/img/law_cropped.png");
-    console.log("url", process.env.PUBLIC_URL);
-
     return(
       <div>
         <Container>
           <Row className="landing-grid">
             <Col sm="12" md="4" className="header-image">
-              <img className="profileImage" alt="profile circle" src={"/static/img/law_cropped.png"}></img>
+              <img shadow={5} className="profileImage" alt="profile circle" src={"/static/img/law_cropped.png"}></img>
             </Col>
 
-            <Col sm="12" md="4" className="header-words">
+            <Col sm={{size: 12, offset: 0}} md={{size: 4, offset: 2}} lg={{size: 4, offset: 0}} className="header-words">
               <span><h4><i>greetings from</i></h4><h1><b>LAWRENCE LUO</b></h1></span>
-              <p>I am a creator. I build web & mobile solutions to solve tangible problems in my communities. As I learn, I strive to empower others by sharing my knowledge. Let&#39;s create something!</p>
+              <p>I am a creator. I build web and mobile products to solve tangible problems in my communities. As I learn, I strive to empower others by sharing my knowledge. Let&#39;s create something!</p>
             </Col>
           </Row>
 
@@ -33,8 +30,9 @@ class Home extends Component {
             <ProductCard desc="test description" title="Test3" tools="third product"/>
             <ProductCard desc="test description" title="Test" tools="first product"/>
             <ProductCard desc="test description" title="Test2" tools="second product"/>
-            <ProductCard desc="test description" title="Test3" tools="third product"/>
           </Row>
+
+          <hr/>
         </Container>
       </div>
     )

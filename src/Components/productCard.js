@@ -1,25 +1,15 @@
-import React, { Component } from 'react';
-import { Container, Row, Col } from 'reactstrap';
-import { Cell, Card, CardText, CardTitle, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
+import React from 'react';
+import { Col } from 'reactstrap';
+import { Card, CardText, CardTitle, CardActions, Button } from 'react-mdl';
 
-class ProductCard extends Component {
-  constructor(props) {
-    super(props);
-  }
-
+// extract props
+const ProductCard = ({ title, desc, tools, img_src, url, github }) => {
   // Trouble assigning class names within Card, perhaps because of Bootstrap/React-MDL CSS override?
-  render() {
-    // Passed props
-    const desc = this.props.desc;
-    const tools = this.props.tools;
-    const img_src = this.props.img_src;
-    const url = this.props.url;
-    const github = this.props.github;
-
-    return(
-      <Col lg="4" md="6">
-        <Card shadow={0} style={{width: '17rem', height: '17rem', margin: "2rem", background: img_src }}>
-          <CardTitle className="card-title">{this.props.title}</CardTitle>
+  return(
+    <Col lg={{size: 3, offset: 0}} md={{size: 6}} style={{"justify-content": 'flex-end'}}>
+      <Card shadow={0} style={{width: '16rem', height: '16rem', margin: "1.5rem", background: img_src }}>
+        <div className="card-content">
+          <CardTitle>{title}</CardTitle>
 
           <CardText>
             <h3>{desc}</h3>
@@ -27,13 +17,14 @@ class ProductCard extends Component {
           </CardText>
 
           <CardActions>
-            <a target="_blank" rel="noopener noreferrer" href={github}><Button style={{color: '#7D6F7D'}}>Github</Button></a>
-            <a target="_blank" rel="noopener noreferrer" href={url}><Button style={{color: '#7D6F7D'}}>Demo</Button></a>
+            <a target="_blank" rel="noopener noreferrer" href={github}><Button><h4>Github</h4></Button></a>
+            <a target="_blank" rel="noopener noreferrer" href={url}><Button><h4>Demo</h4></Button></a>
           </CardActions>
-        </Card>
-      </Col>
-    )
-  }
+        </div>
+      </Card>
+
+    </Col>
+  )
 }
 
 export default ProductCard;

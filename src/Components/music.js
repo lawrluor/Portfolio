@@ -1,8 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 
-
-class Music extends Component {
+class Music extends React.Component {
   render() {
     return(
       <Container>

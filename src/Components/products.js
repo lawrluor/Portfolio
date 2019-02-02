@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Tabs, Tab, Grid, Cell } from 'react-mdl';
 
 import ProductCard from './productCard';
 
-class Products extends Component {
+class Products extends React.Component {
   constructor(props) {
     super(props);
     this.state = { activeTab: 0 };
