@@ -1,9 +1,27 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 
-import ProductCard from './productCard';
+import ProductList from './productList';
+import FeaturedProduct from './featuredProduct';
+import productData from '../productData.json';
 
 class Home extends React.Component {
+  // Extract data from JSON array
+  state = {
+    productData: productData['products'],
+    featuredProduct: productData['products'][0]
+  };
+
+  // show data
+  componentDidMount() {
+    // console.log(productData);
+  }
+
+  onProductClick = (product) => {
+    console.log(product, "clicked from productCard, callback from home");
+    this.setState({ featuredProduct: product });
+  }
+
   render() {
     return(
       <div>
@@ -21,16 +39,13 @@ class Home extends React.Component {
 
           <hr/>
 
-          <Row className="product-row">
-            <ProductCard desc="Performance Anxiety Mobile App" title="Poise" tools="React-Native, JavaScript, Firebase" img_src="url(/static/img/poise_icon.png) center / cover" url="https://www.facebook.com/poisemobileapp/" github="https://github.com/lawrluor/poised"/>
-            <ProductCard desc="Boston Public Schools Event Mobile App" title="More Than A Mile" tools="React-Native, Javascript, Firebase" img_src="url(/static/img/more_than_a_mile.png) center / cover" url="https://play.google.com/store/apps/details?id=com.mtamredux&hl=en" github=""/>
-            <ProductCard desc="Mixed Reality Drumkit for Hololens" title="DrummAR" tools="Unity, Hololens, Vuforia" img_src="url(/static/img/drummar_patterned.jpg) center / cover" url="https://devpost.com/software/drummAR" github="https://github.com/lawrluor/drummAR"/>
-            <ProductCard desc="SSBM Esport Tournament Stats Web App" title="SmashStats" tools="Flask, SQL, Bootstrap" img_src="url(/static/img/smashstats_icon.png) center / cover" url="http://www.smashstats.io/" github="https://github.com/lawrluor/matchstats"/>
-            <ProductCard desc="BostonHacks 2014 Info Mobile App" title="BostonHacks Info" tools="Java, Parse, Android Studio" img_src="url(/static/img/bostonhacks.webp) center / cover" url="https://play.google.com/store/apps/details?id=sean.bostonhacks&hl=en" github="https://github.com/lawrluor/BostonHacks-Android"/>
-            <ProductCard desc="test description" title="Test3" tools="third product"/>
-            <ProductCard desc="test description" title="Test" tools="first product"/>
-            <ProductCard desc="test description" title="Test2" tools="second product"/>
+          <Row>
+            <Col sm="12">
+              <FeaturedProduct product={this.state.featuredProduct} />
+            </Col>
           </Row>
+
+          <ProductList productData={this.state.productData} onProductClick={this.onProductClick}/>
 
           <hr/>
         </Container>

@@ -1,0 +1,68 @@
+{
+  "products": [
+    {
+      "desc": "Performance Anxiety Mobile App",
+      "title": "Poise",
+      "tools": "React-Native, JavaScript, Firebase",
+      "img_src": "static/img/poise_icon.png",
+      "url": "https://www.facebook.com/poisemobileapp/",
+      "github": "https://github.com/lawrluor/poised"
+    },
+    {
+      "desc": "Boston Public Schools Event Mobile App",
+      "title": "More Than A Mile",
+      "tools": "React-Native, JavaScript, Firebase",
+      "img_src": "static/img/more_than_a_mile.png",
+      "url": "https://play.google.com/store/apps/details?id=com.mtamredux&hl=en",
+      "github": "https://github.com/lawrluor/poised"
+    },
+    {
+      "desc": "Mixed Reality Drumkit for Hololens",
+      "title": "DrummAR",
+      "tools": "Unity, Hololens, Vuforia",
+      "img_src": "static/img/drummar_patterned.jpg",
+      "url": "https://devpost.com/software/drummAR",
+      "github": "https://github.com/lawrluor/drummAR"
+    },
+    {
+      "desc": "SSBM Esport Tournament Stats Web App",
+      "title": "SmashStats",
+      "tools": "Flask, SQL, Bootstrap",
+      "img_src": "static/img/smashstats_icon.png",
+      "url": "http://www.smashstats.io/",
+      "github": "https://github.com/lawrluor/matchstats"
+    },
+    {
+      "desc": "BostonHacks 2014 Info Mobile App",
+      "title": "BostonHacks Info" ,
+      "tools": "Java, Parse, Android Studio",
+      "img_src": "static/img/bostonhacks.webp",
+      "url": "https://play.google.com/store/apps/details?id=sean.bostonhacks&hl=en",
+      "github": "https://github.com/lawrluor/BostonHacks-Android"
+    },
+    {
+      "desc": "Test1 description",
+      "title": "Test App" ,
+      "tools": "Java",
+      "img_src": "",
+      "url": "",
+      "github": ""
+    },
+    {
+      "desc": "Test2 description",
+      "title": "Test App" ,
+      "tools": "Java",
+      "img_src": "",
+      "url": "",
+      "github": ""
+    },
+    {
+      "desc": "Test3 description",
+      "title": "Test App" ,
+      "tools": "Java",
+      "img_src": "",
+      "url": "",
+      "github": ""
+    }
+  ]
+}
