@@ -1,21 +1,41 @@
 import React from 'react';
+import ReactPlayer from 'react-player';
 import { Container, Row, Col } from 'reactstrap';
 
 class Music extends React.Component {
   render() {
     return(
       <Container>
-        <div><h1>Music Page</h1></div>
+        <div>
+          <h1>LAWRENCE LUO</h1>
+          <h2>Creative Music</h2>
+        </div>
         <Row>
-          <Col xs="6" sm="4">.col-6 .col-sm-4</Col>
-          <Col xs="6" sm="4">.col-6 .col-sm-4</Col>
-          <Col sm="4">.col-sm-4</Col>
+          <Col xs="12">
+            <ReactPlayer
+              url='https://www.youtube.com/watch?v=3W09RlqTy8I'
+              loop={true}
+              volume={1}
+              muted={true}
+              playing={false}
+              controls={true}
+            />
+          </Col>
         </Row>
+
         <Row>
-          <Col sm={{ size: 6, order: 2, offset: 1 }}>.col-sm-6 .order-sm-2 .offset-sm-1</Col>
+          <Col xs="12">Arrangements</Col>
+          <Col xs="12">
+            <iframe src="https://open.spotify.com/embed/track/6pYbloOUpvLFlNx6n273GB" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          </Col>
+
+          <Col xs="12">
+            <iframe src="https://open.spotify.com/embed/track/4Na4ZvgxCAElsAm65lqNeP" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          </Col>
         </Row>
+
         <Row>
-          <Col sm="12" md={{ size: 6, offset: 3 }}>.col-sm-12 .col-md-6 .offset-md-3</Col>
+          <Col xs="12">New Stuff</Col>
         </Row>
       </Container>
     )
