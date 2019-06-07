@@ -144,6 +144,52 @@ a:hover {
   background-color: white; /* for .pngs, .webp */
 }
 
+.featuredImage {
+  margin: 0.625rem; /* 10px */
+  border-radius: 0.625rem; /* 10px */
+  width: 40vh;
+  background-color: #FFF; /* white default for PNGs */
+}
+
+/* Styles for featured Card */
+.featuredCard {
+  background-color: white;
+  border-radius: 0.625rem; /* 10px */
+  margin: 0.625rem; /* 10px */
+}
+
+.featuredCard:hover {
+  opacity: 1; /* "disable" default hover setting */
+}
+
+.featuredCard h1 {
+  font-size: 2rem;
+}
+
+.featuredCard h2 {
+  font-size: 1.2rem;
+}
+
+.featuredCard h3 {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.featuredCard p {
+  font-size: 1rem;
+}
+
+.demoButton {
+  padding: 0.3125rem;
+  margin: 0.3125rem;
+  background-color: var(--highlight);
+}
+
+.demoButton a {
+  color: white;
+}
+
+
 .iconImage {
   margin: 1.0rem; /* 16px */
   height: 8vh;
@@ -156,7 +202,7 @@ a:hover {
   /* text-align: right; not working for some reason */
 }
 
-/* product row & card */
+/* OLD product row & card */
 .card-content {
   opacity: 0;
   cursor: pointer;

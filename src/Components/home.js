@@ -1,8 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 
-import ProductList from './productList';
-import FeaturedProduct from './featuredProduct';
+import FeaturedProductList from './featuredProductList';
 import productData from '../productData.json';
 
 class Home extends React.Component {
@@ -39,13 +38,7 @@ class Home extends React.Component {
 
           <hr/>
 
-          <Row>
-            <Col sm="12">
-              <FeaturedProduct product={this.state.featuredProduct} />
-            </Col>
-          </Row>
-
-          <ProductList productData={this.state.productData} onProductClick={this.onProductClick}/>
+          <FeaturedProductList productData={this.state.productData}/>
 
           <hr/>
         </Container>
