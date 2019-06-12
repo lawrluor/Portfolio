@@ -7,7 +7,7 @@ import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
 
 // Render after all css imports, to ensure proper css overrides
-import App from './App';
+import App from './Components/App';
 
 import { BrowserRouter } from 'react-router-dom';
 
