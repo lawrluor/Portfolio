@@ -2,6 +2,7 @@
   "products": [
     {
       "desc": "Performance Anxiety Mobile App",
+      "text": "Deployed mobile app helping students combat performance anxiety in competition & student life.",
       "title": "Poise",
       "tools": "React-Native, JavaScript, Firebase",
       "img_src": "static/img/poise_icon.png",
@@ -10,6 +11,7 @@
     },
     {
       "desc": "Boston Public Schools Event Mobile App",
+      "text": "Guided 4-student team for app incentivizing students to attend STEaM-oriented events (50+ users).",
       "title": "More Than A Mile",
       "tools": "React-Native, JavaScript, Firebase",
       "img_src": "static/img/more_than_a_mile.png",
@@ -18,6 +20,7 @@
     },
     {
       "desc": "Mixed Reality Drumkit for Hololens",
+      "text": "Created a virtual, playable drumkit using Hololens and Vuforia as part of 4-student team.",
       "title": "DrummAR",
       "tools": "Unity, Hololens, Vuforia",
       "img_src": "static/img/drummar_patterned.jpg",
@@ -26,6 +29,7 @@
     },
     {
       "desc": "SSBM Esport Tournament Stats Web App",
+      "text": "Created eSports global ranking system using Microsoft Research TrueSkillTM algorithm.",
       "title": "SmashStats",
       "tools": "Flask, SQL, Bootstrap",
       "img_src": "static/img/smashstats_icon.png",
@@ -34,35 +38,12 @@
     },
     {
       "desc": "BostonHacks 2014 Info Mobile App",
+      "text": "Created the official info, scheduling, and map app for BostonHacks as part of 3-student team.",
       "title": "BostonHacks Info" ,
       "tools": "Java, Parse, Android Studio",
       "img_src": "static/img/bostonhacks.webp",
       "url": "https://play.google.com/store/apps/details?id=sean.bostonhacks&hl=en",
       "github": "https://github.com/lawrluor/BostonHacks-Android"
-    },
-    {
-      "desc": "Test1 description",
-      "title": "Test App" ,
-      "tools": "Java",
-      "img_src": "",
-      "url": "",
-      "github": ""
-    },
-    {
-      "desc": "Test2 description",
-      "title": "Test App" ,
-      "tools": "Java",
-      "img_src": "",
-      "url": "",
-      "github": ""
-    },
-    {
-      "desc": "Test3 description",
-      "title": "Test App" ,
-      "tools": "Java",
-      "img_src": "",
-      "url": "",
-      "github": ""
     }
   ]
 }

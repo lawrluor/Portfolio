@@ -18,6 +18,11 @@ class Music extends React.Component {
         <Row>
           <Col xs="12">Arrangements</Col>
         </Row>
+
+        <Row>
+          <Col xs="12"><h2>ARRANGEMENTS</h2></Col>
+          <SpotifyCard arrangement={this.state.arrangements[0]}/>
+        </Row>
       </Container>
     )
   }

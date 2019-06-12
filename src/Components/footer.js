@@ -5,10 +5,8 @@ class Footer extends React.Component {
   render() {
     return (
       <div className="footerContainer">
-        <hr className="divider"/>
-
         <Row>
-          <Col xs="12" className="social-links" style={{'textAlign': 'center'}}>
+          <Col xs="12" className="social-links">
             <a href="mailto:luolawrence1@gmail.com">
               <i className="fa fa-envelope-square" aria-hidden="true" />
             </a>

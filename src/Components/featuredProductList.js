@@ -11,15 +11,14 @@ const FeaturedProductList = ({productData}) => {
           key={product.desc}
           product={product}
         />
-        <hr className="divider"></hr>
       </div>
     );
   });
 
   return(
-    <Row>
+    <div>
       {renderedList}
-    </Row>
+    </div>
   );
 
 }

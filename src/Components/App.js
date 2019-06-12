@@ -8,11 +8,13 @@ import Header from './header';
 class App extends React.Component {
   render() {
     return(
-      <div className="mainContainer">
+      <div className="appContainer">
         <Header/>
+        <hr className="divider"/>
 
         <Main/>
 
+        <hr className="divider"/>
         <Footer/>
       </div>
     )
