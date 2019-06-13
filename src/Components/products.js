@@ -16,7 +16,9 @@ class Products extends React.Component {
 
   render() {
     return(
-      <FeaturedProductList productData={this.state.productData}/>
+      <div className="productsContainer">
+        <FeaturedProductList productData={this.state.productData}/>
+      </div>
     )
   }
 }

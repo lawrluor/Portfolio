@@ -68,6 +68,12 @@ a:hover {
   text-decoration: none;
 }
 
+@media only screen and (max-width: 650px) {
+  .homeTitle h1 {
+    font-size: 2.35rem;
+  }
+}
+
 /* Containers */
 .appContainer { /* Master container in main.js, setting background and height universally */
   color: var(--primary);
@@ -90,7 +96,7 @@ a:hover {
 @media only screen and (max-width: 650px) {
   .homeContainer {
     padding: 1.25rem 1.75rem;
-    margin: 4.5rem 1.0rem;
+    margin: 3rem 1.0rem;
     min-height: 10vh; /* guarantees minimum height of half screen */
     text-align: center;
   }
@@ -105,12 +111,20 @@ a:hover {
 @media only screen and (max-width: 650px) {
   .bodyContainer {
     padding: 1.25rem 1.75rem;
-    margin: 2rem 2rem
+    margin: 2rem 0.5rem
   }
 }
 
 .productsContainer {
+  margin: 4rem 0rem;
   padding: 0rem 5rem;
+}
+
+@media only screen and (max-width: 650px) {
+  .productsContainer {
+    margin: 2rem 0rem;
+    padding: 0rem 0.5rem;
+  }
 }
 
 .headerContainer {
@@ -178,13 +192,13 @@ a:hover {
   font-weight: 500;
 }
 
-.header-image {
+.headerImage {
   text-align: center;
 }
 
 /* Images */
 .profileImage {
-  height: calc(10rem + 10vh); /* 176px + 10% viewport height to pad scaling*/
+  height: calc(10rem + 9vh); /* 176px + 10% viewport height to pad scaling*/
   border-radius: 50%;
   margin-bottom: 1.5rem; /* 24px */
 }
@@ -221,8 +235,14 @@ a:hover {
 .featuredImage {
   margin: 0.625rem; /* 10px */
   border-radius: 0.625rem; /* 10px */
-  width: 25.4vh;
+  width: 14rem;
   background-color: #FFF; /* white default for PNGs */
+}
+
+@media only screen and (max-width: 1000px) {
+  .featuredImage {
+    width: 11rem;
+  }
 }
 
 .featuredCard {

@@ -6,12 +6,10 @@ import FeaturedProduct from './featuredProduct';
 const FeaturedProductList = ({productData}) => {
   const renderedList = productData.map((product) => {
     return(
-      <div className="productsContainer">
-        <FeaturedProduct
-          key={product.desc}
-          product={product}
-        />
-      </div>
+      <FeaturedProduct
+        key={product.desc}
+        product={product}
+      />
     );
   });
 
