@@ -6,6 +6,9 @@ import Music from './music';
 import Products from './products';
 import Thoughts from './thoughts';
 
+// Error pages
+import page404 from './page404'
+
 // Router Embed
 const Main = () => (
   <Switch>
@@ -13,6 +16,7 @@ const Main = () => (
     <Route path="/music" component={Music} />
     <Route path="/products" component={Products} />
     <Route path="/thoughts" component={Thoughts} />
+    <Route component={page404} />
   </Switch>
 )
 
