@@ -17,8 +17,8 @@ const FeaturedProduct = (props) => {
             <h4>{props.product.tools}</h4>
 
             <CardText>{props.product.text}</CardText>
-            <a href={props.product.github}><Button className="demoButton">Github</Button></a>
-            <a href={props.product.url}><Button className="demoButton">Demo</Button></a>
+            <a href={props.product.github} rel="noopener noreferrer" target="_blank"><Button className="demoButton">Github</Button></a>
+            <a href={props.product.url} rel="noopener noreferrer" target="_blank"><Button className="demoButton">Demo</Button></a>
           </CardBody>
         </Card>
       </Col>
