@@ -10,9 +10,9 @@ const post = (props) => {
   const idLink = "#" + props.id;
   return(
     <div className="postContainer">
-      <a href={idLink}><h2><b>{props.title}</b></h2></a>
+      <a href={idLink}><h2 className="blog-h2"><b>{props.title}</b></h2></a>
       <h3><i>{props.date}</i></h3>
-      <p>{props.text}</p>
+      <p className="blog-p">{props.text}</p>
     </div>
   )
 }
