@@ -5,6 +5,7 @@ import Home from './home';
 import Music from './music';
 import Products from './products';
 import Thoughts from './thoughts';
+import Resume from './resume';
 
 // Error pages
 import page404 from './page404'
@@ -16,6 +17,7 @@ const Main = () => (
     <Route path="/music" component={Music} />
     <Route path="/products" component={Products} />
     <Route path="/thoughts" component={Thoughts} />
+    <Route path="/resume" component={Resume} />
     <Route component={page404} />
   </Switch>
 )
