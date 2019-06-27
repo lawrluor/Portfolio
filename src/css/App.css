@@ -103,8 +103,8 @@ a:hover {
 }
 
 .bodyContainer { /* generic content block, used in music.js */
-  padding: 1.25rem 1.75rem;
-  margin: 4rem 8rem
+  padding: 1.25rem 2.5rem;
+  margin: 4rem 8rem;
   /* min-height: 20vh; /* guarantees minimum height of half screen */
 }
 

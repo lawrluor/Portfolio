@@ -1,0 +1,24 @@
+/* slightly larger than size 1.125rem */
+h2 {
+  font-size: 1.75rem;
+  background-color: var(--highlight);
+  padding: 0.05rem;
+}
+
+p {
+  font-size: 1.325rem;
+  line-height: 2.25rem; /* naturally 1.75 rem */
+  text-align: left;
+  /* letter-spacing: 0.005rem; */
+}
+
+/* larger margin than App.css bodyContainer */
+.bodyContainer {
+  padding: 1.25rem 2.5rem;
+  margin: 4rem 12rem;
+}
+
+.postContainer {
+  /* background-color: grey; */
+  padding: 2rem;
+}

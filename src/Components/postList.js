@@ -4,11 +4,15 @@ import Post from './post';
 
 const PostList = (props) => {
   const posts = props.data.posts;
-  const renderedPosts = posts.map((post) => {
-    console.log(post);
+
+  // render a list of posts, with iteration count index as the key.
+  // index can be used to automatically assign keys to posts
+  // object.key should never be called explicitly, use another prop with identical value object.id
+  const renderedPosts = posts.map((post, index) => {
     return(
       <Post
-        key={post.title}
+        key={index}
+        id={post.id}
         title={post.title}
         date={post.date}
         text={post.text}
