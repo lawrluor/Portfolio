@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom';
 // Using Link instead of <a>: <Link to={idLink}>{props.title}</Link>
 
 const post = (props) => {
-  console.log(props);
   const idLink = "#" + props.id;
   // const text = props.text.replace(/a/g, '\n'); // converts string, but newlines don't implicitly work
 
@@ -25,11 +24,29 @@ const post = (props) => {
     )
   })
 
+  // Avoid setting HTML directly, so we use if-else cases
+  const text_dict = props.test_text;
+  const test = "test"
+
+  const test_format = Object.keys(text_dict).forEach((key, value) => {
+    const line = text_dict[key];
+    console.log(key, line);
+
+    return (<p>{line}</p>)
+    // if (key === "p") {
+    //   return(<p>{line}</p>)
+    // } else if (key === "li") {
+    //   return(<li>{line}</li>)
+    // } else {
+    //   return(<p>{line}</p>)
+    // }
+  });
+
   return(
     <div className="postContainer">
       <a href={idLink}><h2 className="blog-h2"><b>{props.title}</b></h2></a>
       <h3><i>{props.date}</i></h3>
-      {formatted}
+      {test_format}
     </div>
   )
 }

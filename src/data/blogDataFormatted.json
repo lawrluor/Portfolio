@@ -1,0 +1,17 @@
+{
+  "posts" : [
+    {
+      "id": 12,
+      "title": "Shanghai (上海)",
+      "date": "January 13, 2016",
+      "images": true,
+      "text": "",
+      "formatted_text": [],
+      "test_text": {
+        "p":"I’ve been on the road for 24 days, more than three weeks of constant traveling, navigating, and adapting. I’m on vacation, but it doesn’t feel like it anymore. For the past few days, it’s been difficult for me to appreciate new places and I’ve stopped taking pictures altogether. I loathe my lack of focus and energy; my mind has already returned to California, while my body remains reluctantly in China.",
+        "li:":"I couldn’t be more ready to go home - thankfully, my flight departs in an hour. Most times I travel, I only have hazy half-memories of the locations and the people I encounter. But having blogged through the duration of my trip, my experiences seem so much more meaningful to me. The idea of blogging past this trip is enticing, though I’ve learned how time-consuming the habit can be. I’m not certain about this blog specifically, though. I did intend touse it solely to document this trip (hence the name), and I do have a few more thoughts and a bunch of pictures still that might find their way here over the next few days. As for the goals I initially established at the beginning of this blog, I think I did a fairly good job.",
+        "li":"I do have some new goals that are inspired by my travels, though. Over the next year, I will work to"
+      }
+    }
+  ]
+}

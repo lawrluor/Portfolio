@@ -15,7 +15,7 @@ const PostList = (props) => {
         id={post.id}
         title={post.title}
         date={post.date}
-        text={post.text}
+        formatted_text={post.formatted_text}
         images={post.images}
       />
     )

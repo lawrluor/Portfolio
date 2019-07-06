@@ -1,16 +1,16 @@
 /* slightly larger than size 1.125rem */
 .blog-h2 {
-  font-size: 1.75rem;
-  background-color: var(--highlight);
-  padding: 0.05rem;
+  background-color: #877F87; /* lighter variation of highlight */
+  padding: 0.2rem;
 }
 
+/* slightly larger
 .blog-p {
   font-size: 1.3rem;
-  line-height: 2.25rem; /* naturally 1.75 rem */
+  line-height: 2.25rem;
   text-align: left;
-  /* letter-spacing: 0.005rem; */
-}
+  letter-spacing: 0.005rem;
+} */
 
 /* larger margin than App.css bodyContainer */
 .blogContainer {
