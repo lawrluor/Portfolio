@@ -4,7 +4,7 @@ import { Switch, Route } from 'react-router-dom';
 import Home from './home';
 import Music from './music';
 import Products from './products';
-import Thoughts from './thoughts';
+import Blog from './blog';
 import Resume from './resume';
 
 // Error pages
@@ -16,7 +16,7 @@ const Main = () => (
     <Route exact path="/" component={Home} />
     <Route path="/music" component={Music} />
     <Route path="/products" component={Products} />
-    <Route path="/thoughts" component={Thoughts} />
+    <Route path="/thoughts" component={Blog} />
     <Route path="/resume" component={Resume} />
     <Route component={page404} />
   </Switch>

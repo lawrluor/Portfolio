@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col, Card } from 'reactstrap';
+import { Row, Col } from 'reactstrap';
 
 const SpotifyCard = (props) => {
   console.log(props);

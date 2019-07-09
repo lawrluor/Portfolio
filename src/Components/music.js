@@ -2,7 +2,7 @@ import React from 'react';
 import ReactPlayer from 'react-player';
 import { Container, Row, Col } from 'reactstrap';
 
-import SpotifyCard from './spotifyCard';
+// import SpotifyCard from './spotifyCard';
 import musicData from '../data/musicData';
 
 // import Pdf from '../Documents/Document.pdf';

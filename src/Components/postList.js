@@ -3,7 +3,7 @@ import React from 'react';
 import Post from './post';
 
 const PostList = (props) => {
-  const posts = props.data.posts;
+  const posts = props.data;
 
   // render a list of posts, with iteration count index as the key.
   // index can be used to automatically assign keys to posts
