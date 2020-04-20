@@ -16,6 +16,7 @@ body {
 }
 
 h1 {
+  font-family: 'Nunito Sans', sans-serif;
   color: var(--primary);
   font-size: 2.5rem; /* 42px */
   letter-spacing: 0.03125rem; /* 0.5px */
@@ -23,30 +24,35 @@ h1 {
 }
 
 h2 {
+  font-family: 'Nunito Sans', sans-serif;
   color: var(--primary);
   font-size: 1.5rem; /* 24px */
   font-weight: 400;
 }
 
 h3 {
+  font-family: 'Nunito Sans', sans-serif;
   color: var(--primary);
   font-size: 1.125rem; /* 18px */
   font-weight: 300;
 }
 
 h4 {
+  font-family: 'Nunito Sans', sans-serif;
   color: var(--highlight);
   font-size: 1.0rem; /* 16px */
   font-weight: 300;
 }
 
 h5 {
+  font-family: 'Nunito Sans', sans-serif;
   color: var(--highlight);
   font-size: 0.75rem; /* 12px */
   font-weight: 200
 }
 
 h6 {
+  font-family: 'Nunito Sans', sans-serif;
   color: var(--highlight);
   font-size: 0.5rem; /* 8px */
   font-weight: 150

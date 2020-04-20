@@ -16,8 +16,8 @@ class Home extends React.Component {
             </span>
 
             <p>
-              I am a creator. I build web and mobile products to solve tangible problems in my communities.
-              As I learn, I strive to empower others by sharing my knowledge. Let&#39;s create something!
+              I am a creator. I build web and mobile products, integrating my passions in music, psychology, and gaming.
+              As I learn, I empower others by sharing my knowledge. Let&#39;s create something!
             </p>
           </Col>
         </Row>
