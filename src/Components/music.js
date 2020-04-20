@@ -31,7 +31,7 @@ class Music extends React.Component {
               For inquiries, please email <a href="mailto:luolawrence1@gmail.com">luolawrence1@gmail.com</a>.
             </p>
 
-            <h3>Associated with:</h3>
+            <h3>Currently affiliated with:</h3>
             <ul>
               <li><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/user/buinachord2">The A Cappella Collective</a></li>
               <li><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCUmsLPXkFTBv5TpdUuedSdw">BU In Achord</a></li>

@@ -15,6 +15,7 @@ class Products extends React.Component {
   }
 
   render() {
+    // TODO: Consider adding paragraph with product interests, skills, and expertise areas
     return(
       <div className="productsContainer">
         <FeaturedProductList productData={this.state.productData}/>

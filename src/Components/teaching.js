@@ -9,12 +9,12 @@ class Teaching extends React.Component {
           <Col lg="5" xs="12">
             <span><h1><b>TEACHING</b></h1></span>
             <p>
-              To me, responsible coding involves sharing what I learn and training the next generation of developers. Through these efforts, I have accrued 7+ years of tutoring experience spread across Computer Science & Coding subjects for students of all levels.
+              To me, part of being a responsible creator involves sharing what I learn and training the next generation of developers. Through these efforts, I have accrued 7+ years of teaching experience spread across Computer Science & Coding subjects for students of all levels.
             </p>
 
             <p>
               My experience with software topics includes web & mobile app development with Python, HTML, CSS, Javascript, React, and React-Native. If you are interested in any of the subjects I tutor in, or are wondering if I can tutor in a specific subject not listed here, please don't hesitate to reach out and ask!
-              For inquiries, please visit my profile on <a href={"https://www.wyzant.com/Tutors/LawrenceTutors"} rel="noopener noreferrer" target="_blank">Wyzant</a>.
+              For further inquiries, please visit my profile on <a href={"https://www.wyzant.com/Tutors/LawrenceTutors"} rel="noopener noreferrer" target="_blank">Wyzant</a>.
             </p>
           </Col>
         </Row>

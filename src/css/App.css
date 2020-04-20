@@ -224,8 +224,9 @@ a:hover {
 }
 
 .imageCol {
-  text-align: right;
+  text-align: left;
   padding-left: 2rem;
+  margin-right: -1.5rem;
 }
 
 .featuredImage {

@@ -22,7 +22,7 @@
       "github": "https://github.com/lawrluor/poised"
     },
     {
-      "desc": "Mixed Reality Drumkit for Hololens",
+      "desc": "Mixed Reality Drumkit App for Hololens",
       "text": "Created a virtual, playable drumkit using Hololens and Vuforia as part of 4-student team.",
       "title": "DrummAR",
       "tools": "Unity, Hololens, Vuforia",
@@ -31,8 +31,8 @@
       "github": "https://github.com/lawrluor/drummAR"
     },
     {
-      "desc": "SSBM Esport Tournament Stats Web App",
-      "text": "Created eSports global ranking system using Microsoft Research TrueSkillTM algorithm.",
+      "desc": "SSBM Esport Stats Web App",
+      "text": "Created eSports global ranking system using Microsoft Research TrueSkill algorithm.",
       "title": "SmashStats",
       "tools": "Flask, Python, Bootstrap, SQL, Postgres",
       "img_src": "static/img/smashstats_icon.png",
