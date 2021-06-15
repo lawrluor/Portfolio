@@ -1,6 +1,63 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 
+import fbLogin from './fbLogin.html';
+
+const log = "
+<html>
+<head>
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId      : '1005580019944390',
+        cookie     : true,
+        xfbml      : true,
+        version    : 'v8.0'
+      });
+
+      FB.AppEvents.logPageView();
+
+    };
+
+    (function(d, s, id){
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) {return;}
+       js = d.createElement(s); js.id = id;
+       js.src = "https://connect.facebook.net/en_US/sdk.js";
+       fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));
+
+    function checkLoginState() {
+      FB.getLoginStatus(function(response) {
+        statusChangeCallback(response);
+      });
+    }
+  </script>
+</head>
+
+<body>
+  <fb:login-button
+    scope="public_profile,email"
+    onlogin="checkLoginState();">
+  </fb:login-button>
+</body>
+</html>
+
+
+
+
+<!-- {
+  status: 'connected',
+  authResponse: {
+      accessToken: '...',
+      expiresIn:'...',
+      signedRequest:'...',
+      userID:'...'
+  }
+} -->
+
+"
+
 class Teaching extends React.Component {
   render() {
     return (
@@ -16,10 +73,11 @@ class Teaching extends React.Component {
               My experience with software topics includes web & mobile app development with Python, HTML, CSS, Javascript, React, and React-Native. If you are interested in any of the subjects I tutor in, or are wondering if I can tutor in a specific subject not listed here, please don't hesitate to reach out and ask!
               For further inquiries, please visit my profile on <a href={"https://www.wyzant.com/Tutors/LawrenceTutors"} rel="noopener noreferrer" target="_blank">Wyzant</a>.
             </p>
+
+            <div dangerouslySetInnerHTML={{ __html: fbLogin }} />
           </Col>
         </Row>
       </Container>
-
     )
   }
 }

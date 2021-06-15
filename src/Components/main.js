@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom'; // NavLink - allows styling links conditionally based on current Route 
 
 import Home from './home';
 import Music from './music';
@@ -23,5 +23,8 @@ const Main = () => (
     <Route component={page404} />
   </Switch>
 )
+
+// Example of not using switch
+// <Route exact path="/posts:id/edit">
 
 export default Main;

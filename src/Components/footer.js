@@ -19,7 +19,7 @@ class Footer extends React.Component {
               <i className="fa fa-github-square" aria-hidden="true" />
             </a>
 
-            <a href="https://www.instagram.com/oodles.of.lawrences" rel="noopener noreferrer" target="_blank">
+            <a href="https://www.instagram.com/notesfromlaw" rel="noopener noreferrer" target="_blank">
               <i className="fa fa-instagram" aria-hidden="true" />
             </a>
           </Col>

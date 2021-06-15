@@ -1,6 +1,6 @@
-0. push final version code to github and stage for deployment
+NOTE: I am using yarn for package management, Heroku for deployment
 
-USING HEROKU & YARN!
+0. push final version code to github and stage for deployment
 
 1. Create production build. This creates /build folder that can be served
   $ yarn build
@@ -9,10 +9,8 @@ USING HEROKU & YARN!
   $ yarn global add serve
   $ serve -s build
 
-3. Push to Heroku:
+3. Push to Heroku master branch:
   $ git push heroku master
-
-
 
 
 Z. NOTE: NO LONGER USING GITHUB PAGES: My implementation of Github Pages simply serves from the master branch.

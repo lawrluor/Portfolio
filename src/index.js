@@ -11,6 +11,7 @@ import App from './Components/App';
 
 import { BrowserRouter } from 'react-router-dom';
 
+// Optional Todo: put Router in App.js
 ReactDOM.render(
   <BrowserRouter>
     <App/>
